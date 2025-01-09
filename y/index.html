@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Portafolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./styles.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top color-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <a class="navbar-brand" href="#">Manuel Omar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,7 +41,7 @@
             </div>
         </div>
     </nav>
-
+    <div class="stars" id="stars"></div>
     <main class="container py-5">
         <section id="about" class="mb-5">
             <h2 class="mb-3">Sobre mí</h2>
@@ -51,99 +53,152 @@
                 expectativas.</p>
         </section>
 
-        <section id="projects" class="mb-5">
-            <h2 class="mb-3">Mis Proyectos</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Trailers de Películas</h3>
-                            <h6 class="card-subtitle mb-2 text-muted">Angular & .NET</h6>
-                            <p class="card-text">Aplicación de trailers de películas desarrollada con Angular en el
-                                frontend y .NET en el backend.</p>
+        <section id="projects">
+            <h2>Mis Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-content">
+                        <div class="image-container">
+                            <img src="./src/img/pokeapp.png" alt="Pokemon App Screenshot">
                         </div>
+                        <h3 class="card-title">Pokedex</h3>
+                        <span class="card-badge">Angular</span>
+                        <p class="card-text">
+                            Pokedex interactiva: Proyecto web que muestra un listado dinámico de Pokémon con su
+                            información clave (nombre, tipo, número y sprite) en tarjetas animadas. Incluye navegación
+                            por categorías y diseño responsive, ofreciendo una experiencia moderna y fluida.
+                        </p>
+                        <a href="https://pokedex-mpd.web.app/pokeapi/pokemon" target="_blank" class="card-link">Ver
+                            Proyecto</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Aplicación de Gestión</h3>
-                            <h6 class="card-subtitle mb-2 text-muted">React</h6>
-                            <p class="card-text">Sistema de gestión empresarial desarrollado con React y una API
-                                RESTful.</p>
+
+                <div class="project-card">
+                    <div class="card-content">
+                        <div class="image-container">
+                            <img src="./src/img/tundra.png" alt="Proyecto 2 Screenshot">
                         </div>
+                        <h3 class="card-title">Tundra</h3>
+                        <span class="card-badge">JavaScript, Html, css</span>
+                        <p class="card-text">Diseñé esta landing page interactiva y moderna para una tarjeta inteligente
+                            que comparte información al instante con solo acercarla a un celular. Totalmente animada,
+                            responsive y centrada en ofrecer una experiencia atractiva y funcional.</p>
+                        <a href="https://tundratap.com" target="_blank" class="card-link">Ver Proyecto</a>
+
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Dashboard Analítico</h3>
-                            <h6 class="card-subtitle mb-2 text-muted">Angular</h6>
-                            <p class="card-text">Dashboard interactivo para visualización de datos empresariales usando
-                                Angular.</p>
+                <div class="project-card">
+                    <div class="card-content">
+                        <div class="image-container">
+                            <img src="./src/img/hilda dental.png" alt="Proyecto 3 Screenshot">
                         </div>
+                        <h3 class="card-title">Hilda Dental</h3>
+                        <span class="card-badge">WebFlow</span>
+                        <p class="card-text">Un portal web moderno diseñado para Hilda Dental, donde los usuarios pueden
+                            acceder a información detallada sobre los servicios y planes ofrecidos por el consultorio
+                            dental. La página incluye una interfaz atractiva y funcional, con secciones dedicadas a
+                            presentar al equipo, los tratamientos disponibles y un formulario interactivo para que los
+                            usuarios puedan enviar consultas o agendar citas fácilmente. Perfectamente optimizado para
+                            brindar una experiencia fluida y accesible en cualquier dispositivo.</p>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <section id="experience" class="mb-5">
             <h2 class="mb-3">Experiencia Laboral</h2>
             <div class="card mb-3">
                 <div class="card-body">
-                    <h3 class="card-title">Desarrollador Full Stack en TechCorp</h3>
-                    <h6 class="card-subtitle mb-2 text-muted">2018 - Presente</h6>
+                    <h3 class="card-title">Freelancer</h3>
+                    <h6 class="card-subtitle ">2019 - Presente</h6>
                     <ul>
-                        <li>Desarrollo de aplicaciones web con Angular y .NET</li>
-                        <li>Liderazgo de equipo en proyectos de gran escala</li>
+                        <li>Creación de Portales Informativos:
+                            Desde la planeación y diseño visual hasta el desarrollo, integración de sistemas, pruebas y lanzamiento. Incluye mantenimiento continuo para asegurar funcionalidad, accesibilidad y actualizaciones constantes.</li>
+                        <li>Desarrollo integral del ciclo de vida de diversos sistemas, abarcando tanto el backend como
+                            el frontend.</li>
+                        <li>Optimización avanzada del rendimiento en aplicaciones web para maximizar su eficiencia y
+                            velocidad.</li>
                     </ul>
                 </div>
             </div>
-            <div class="card">
+            <div class="card mb-3">
                 <div class="card-body">
-                    <h3 class="card-title">Desarrollador Frontend en WebSolutions</h3>
-                    <h6 class="card-subtitle mb-2 text-muted">2016 - 2018</h6>
+                    <h3 class="card-title">Desarrollador Full Stack en Solvex Dominicana</h3>
+                    <h6 class="card-subtitle ">2020 - 2023</h6>
                     <ul>
-                        <li>Creación de interfaces de usuario con React</li>
-                        <li>Optimización de rendimiento en aplicaciones web</li>
+
+                        <li>Liderazgo y coordinación de equipos de desarrollo, garantizando la entrega oportuna de las
+                            soluciones de software. </li>
+                        <li>Diseño e implementación de soluciones de comercio electrónico, optimizando la experiencia
+                            del usuario y la eficiencia operativa.</li>
+
+                        <li>Colaboración activa con equipos multidisciplinares, desde diseño UX/UI hasta infraestructura
+                            y soporte, asegurando la cohesión en el desarrollo de proyectos.</li>
                     </ul>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Desarrollador Full Stack en Asociación Popular de Ahorros y Préstamos - APAP
+                    </h3>
+                    <h6 class="card-subtitle ">2024 - 2025</h6>
+                    <ul>
+                        <li>Colaboración en el desarrollo y mantenimiento de microservicios, enfocando en la estabilidad
+                            y escalabilidad del sistema.</li>
+                        <li> Colaboración activa en el desarrollo de aplicaciones web, asegurando una implementación
+                            efectiva y eficiente de las soluciones.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Desarrollador Front-end en Ministerio de Cultura 
+                    </h3>
+                    <h6 class="card-subtitle ">2024 - Presente</h6>
+                    <ul>
+                        <li>Desarrollo y mantenimiento de interfaces frontend con múltiples módulos, incluyendo transporte y suministro, garantizando una experiencia de usuario intuitiva y eficiente.</li>
+                        <li>Implementación de soluciones escalables y modernas para aplicaciones web, asegurando la integración fluida entre los diferentes módulos del sistema.</li>
+                    </ul>
+                    
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="mb-5">
-            <h2 class="mb-3">Tecnologías</h2>
+        <section id="skills">
+            <h2>Tecnologías</h2>
             <div>
-                <span class="badge bg-primary me-2 mb-2 skill-badge">Angular</span>
-                <span class="badge bg-primary me-2 mb-2 skill-badge">React</span>
-                <span class="badge bg-primary me-2 mb-2 skill-badge">.NET</span>
-                <span class="badge bg-primary me-2 mb-2 skill-badge">JavaScript</span>
-                <span class="badge bg-primary me-2 mb-2 skill-badge">TypeScript</span>
-                <span class="badge bg-primary me-2 mb-2 skill-badge">C#</span>
-                <span class="badge bg-primary me-2 mb-2 skill-badge">HTML</span>
-                <span class="badge bg-primary me-2 mb-2 skill-badge">CSS</span>
-                <span class="badge bg-primary me-2 mb-2 skill-badge">SQL</span>
+                <span class="skill-badge angular">Angular</span>
+                <span class="skill-badge sql">WebFlow</span>
+
+                <span class="skill-badge react">React</span>
+                <span class="skill-badge dotnet">.NET</span>
+                <span class="skill-badge javascript">JavaScript</span>
+                <span class="skill-badge typescript">TypeScript</span>
+                <span class="skill-badge csharp">C#</span>
+                <span class="skill-badge html">HTML</span>
+                <span class="skill-badge css">CSS</span>
+                <span class="skill-badge sql">SQL</span>
             </div>
         </section>
 
         <section id="contact">
-            <h2 class="mb-3">Contáctame</h2>
+            <h2>Contáctame</h2>
             <form action="https://formsubmit.co/manuelmedinape@gmail.com" method="POST">
                 <input type="hidden" name="_captcha" value="false">
-
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje:</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                <button type="submit">Enviar Mensaje</button>
             </form>
         </section>
         <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
@@ -167,16 +222,17 @@
         <div class="container text-center">
             <p>&copy; 2023 Mi Portafolio. Todos los derechos reservados.</p>
             <div class="mt-3">
-                <a href="https://www.linkedin.com/" target="_blank" class="me-3">
+                <a href="https://www.linkedin.com/in/manuel-omar-medina-perez-7a9105229/" target="_blank" class="me-3">
                     <i class="bi bi-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://github.com/" target="_blank">
+                <a href="https://github.com/Manuelomar" target="_blank">
                     <i class="bi bi-github"></i> GitHub
                 </a>
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -211,6 +267,7 @@
         });
 
     </script>
+
 
 </body>
 
